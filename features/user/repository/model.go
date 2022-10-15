@@ -9,7 +9,7 @@ import (
 type User struct {
 	gorm.Model
 	Nama     string
-	HP       string `gorm:"index:idx_name,unique"`
+	HP       string
 	Password string
 }
 
