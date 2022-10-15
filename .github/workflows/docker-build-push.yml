@@ -38,4 +38,4 @@ jobs:
             docker stop prjku
             docker rm prjku
             docker rmi khalidrian/deployproject
-            docker run --name prjku -d -p 8000:8000 khalidrian/deployproject
+            docker run --name prjku --link deployment:3306 -d -p 8000:8000 khalidrian/deployproject
